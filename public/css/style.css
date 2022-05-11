@@ -2,13 +2,35 @@
   box-sizing: border-box;
 }
 
+h1{
+  color: #ffffff;
+  font-family: 'Righteous', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+h2{
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+h3{
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 body {
   background-color: #FB6B6B;
   margin: auto;
-  font-family: 'Roboto', sans-serif;
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 14px;
+
 }
 .app{
   margin:10px;
@@ -18,6 +40,7 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
 .card{
   margin:10px;
   padding:5px;
@@ -26,7 +49,9 @@ body {
   width:80%;
   color:#333333;
 }
+
 .card-question{
+  height: 65px;
   margin:10px;
   padding:5px;
   background-color: #FFFFD4;
@@ -40,6 +65,7 @@ body {
   background-color: #FFFFD4;
   border-radius:10px;
   width:80%;
+  height: 65px;
   color:#333333;
 }
 
@@ -48,6 +74,13 @@ body {
   align-items: center;
 }
 
+.bottombar{
+  position: fixed;
+  left: 0;
+  bottom:0;
+  height: 70px;
+  background-color: #FFFFFF;
+}
 /* .navbar {
   width: 100%;
   display: flex;
