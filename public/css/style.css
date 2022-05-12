@@ -9,6 +9,7 @@ h1{
   font-weight: 400;
   font-size: 36px;
   line-height: 45px;
+  margin:5px;
 }
 
 h2{
@@ -17,9 +18,11 @@ h2{
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+  margin:5px;
 }
 
 h3{
+  margin:5px;
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;
@@ -30,7 +33,7 @@ h3{
 body {
   background-color: #FB6B6B;
   margin: auto;
-
+  margin-bottom: 65px;
 }
 .app{
   margin:10px;
@@ -42,44 +45,37 @@ body {
 }
 
 .card{
+  height: 65px;
   margin:10px;
   padding:5px;
   background-color: #FFFFFF;
   border-radius:10px;
   width:80%;
   color:#333333;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-.card-question{
-  height: 65px;
-  margin:10px;
-  padding:5px;
+.beige{
   background-color: #FFFFD4;
-  border-radius:10px;
-  width:80%;
-  color:#333333;
-}
-.card-answer{
-  margin:10px;
-  padding:5px;
-  background-color: #FFFFD4;
-  border-radius:10px;
-  width:80%;
-  height: 65px;
-  color:#333333;
 }
 
 .row{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.bottombar{
+.footer{
   position: fixed;
   left: 0;
   bottom:0;
   height: 70px;
   background-color: #FFFFFF;
+  width: 100%;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* .navbar {
   width: 100%;

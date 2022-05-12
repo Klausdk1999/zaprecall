@@ -1,7 +1,9 @@
 export default function Menu() {
 	return (
     <>
-      <div class="bottombar"></div>
+      <div class="footer">
+        <h3>0/4 concluídos</h3>
+      </div>
     </>
   );
 }
