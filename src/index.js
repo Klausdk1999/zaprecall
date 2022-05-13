@@ -6,7 +6,8 @@ import seta from "./assets/media/setinha.png";
 //src={seta}
 import Body from './components/Body';
 import Start from './components/Start';
-
+import feliz from "./assets/media/party.png";
+import triste from "./assets/media/sad.png";
 
 
 function App() {

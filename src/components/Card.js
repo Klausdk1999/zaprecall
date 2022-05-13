@@ -48,7 +48,7 @@ export default function Card({ index, object, setState}) {
         <>
             <div className="card" onClick={()=>setState(index,"question")}>
                 <h2 className={crasse} >Pergunta {index+1} </h2>
-                <ion-icon key={index} className={crasse} name={name}></ion-icon>
+                <ion-icon key={index} name={name}></ion-icon>
             </div>
         </>
     );
