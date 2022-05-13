@@ -9,7 +9,7 @@ h1{
   font-weight: 400;
   font-size: 36px;
   line-height: 45px;
-  margin:5px;
+  margin:15px;
 }
 
 h2{
@@ -30,6 +30,20 @@ h3{
   line-height: 22px;
 }
 
+h4{
+  padding-top: 15px;
+  color:white;
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.012em;
+}
+
 body {
   background-color: #FB6B6B;
   margin: auto;
@@ -40,17 +54,33 @@ ion-icon{
   font-size: 23px;
 }
 
+.startButton{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 246px;
+  height: 54px;
+  background: #FFFFFF;
+  border: 1px solid #D70900;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.margin-top{
+  margin-top: 10%;
+}
+
 .app{
   margin:10px;
   padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
 }
 
 .card{
-  height: 65px;
+  min-height: 65px;
   margin:15px;
   padding-left:25px;
   padding-right:25px;
@@ -64,30 +94,40 @@ ion-icon{
   justify-content: space-between;
 }
 
-.red{
-  background-color: red;
-  color: white;
+.button{
+  min-height: 37px;
+  min-width: 80px;
   border-radius: 5px;
   padding:5px;
-  margin-bottom:10px;
+  margin:10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.red{
+  background-color: red;
+}
+
+.colorRed{
+  color:red;
+  text-decoration: line-through;
 }
 
 .green{
-  background-color: lightgreen;
-  color: white;
-  border-radius: 5px;
-  padding:5px;
-  margin-bottom:10px;
+  background-color: rgb(44, 139, 44);
 }
-
+.colorGreen{
+  color:rgb(44, 139, 44);
+  text-decoration: line-through;
+}
 .orange{
   background-color: orange;
-  color: white;
-  border-radius: 5px;
-  padding:5px;
-  margin-bottom:10px;
 }
-
+.colorOrange{
+  color:orange;
+  text-decoration: line-through;
+}
 .beige{
   background-color: #FFFFD4;
 }
@@ -98,6 +138,14 @@ ion-icon{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header{
+  margin:10px;
+  width:90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .column{
@@ -119,3 +167,4 @@ ion-icon{
   align-items: center;
   justify-content: center;
 }
+

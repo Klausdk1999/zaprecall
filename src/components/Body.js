@@ -50,15 +50,18 @@ export default function Body() {
   const [recalls, setRecalls] = React.useState(recallsbase);
 
   function setState(index,state){
+    console.log(state);
     let newRecalls=[...recalls];
     newRecalls[index].state=state;
     setRecalls(newRecalls);
+    console.log(recalls);
   }
 
+  //pegar states para enviar no menu
 	return (
     <>
       <div className="app">
-        <div className="row"> 
+        <div className="header"> 
           <img src="./media/logo.png" alt="Logo Zap" />
           <h1>ZapRecall</h1>
         </div>
@@ -66,7 +69,7 @@ export default function Body() {
           <Card index={index} object={recall} setState={setState}/>
         ))}
       </div>
-      <Menu/>
+      <Menu recalls={recalls}/>
     </>
   );
 }
