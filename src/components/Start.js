@@ -6,7 +6,7 @@ export default function Start({setInit}) {
         <div className="app">
             <img height="160px" src="./media/logo.png" alt="Logo Zap" />
             <h4>ZapRecall</h4>
-            <button className="startButton" onClick={() => setInit(true)}> Vamos zapear </button>
+            <button className="startButton" onClick={() => setInit(true)}> Vamos zapear! </button>
         </div>
         </>
       );

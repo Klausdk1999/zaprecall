@@ -180,3 +180,26 @@ ion-icon[name="checkmark-circle"] {
   justify-content: center;
 }
 
+.hide{
+  display: none;
+}
+
+.white{
+  color:white;
+}
+
+.correct{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji{
+  margin-top: 5px;
+  display: flex;
+  margin-right: 4px;
+}
+
+.bold{
+  font-weight: bold;
+}

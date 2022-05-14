@@ -2,13 +2,8 @@ import ReactDOM from "react-dom";
 import React from "react";
 import "./assets/css/reset.css";
 import "./assets/css/style.css";
-import seta from "./assets/media/setinha.png";
-//src={seta}
 import Body from './components/Body';
 import Start from './components/Start';
-import feliz from "./assets/media/party.png";
-import triste from "./assets/media/sad.png";
-
 
 function App() {
   const [init, setInit] = React.useState(false);
