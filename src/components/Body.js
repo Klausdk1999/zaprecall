@@ -48,13 +48,26 @@ export default function Body() {
   }
 
   const [recalls, setRecalls] = React.useState(recallsbase);
+  const [erro, setErro] = React.useState(false);
+  const [arr, setArr] = React.useState([]);
 
+  
   function setState(index,state){
-    console.log(state);
+    let newArr=[...arr];
+    if(state==='red'){
+      newArr.push('close-circle');
+      setErro(true);
+    }
+    if(state==='orange'){
+      newArr.push('help-circle');
+    }
+    if(state==='green'){
+      newArr.push('checkmark-circle');
+    }
+    setArr(newArr); 
     let newRecalls=[...recalls];
     newRecalls[index].state=state;
     setRecalls(newRecalls);
-    console.log(recalls);
   }
 
   //pegar states para enviar no menu
@@ -69,7 +82,7 @@ export default function Body() {
           <Card index={index} object={recall} setState={setState}/>
         ))}
       </div>
-      <Menu recalls={recalls}/>
+      <Menu arr={arr} recalls={recalls} erro={erro}/>
     </>
   );
 }

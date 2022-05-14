@@ -95,8 +95,9 @@ ion-icon{
 }
 
 .button{
-  min-height: 37px;
-  min-width: 80px;
+  font-weight: bold;
+  min-height: 40px;
+  min-width: 30%;
   border-radius: 5px;
   padding:5px;
   margin:10px;

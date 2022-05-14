@@ -2,23 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 
 
-export default function Menu({recalls}) {
-  let erro=false;
-  let arr=[];
-
-  for(let i=0;i<recalls.length;i++){
-    if(recalls[i].state==='red'){
-      arr.push('close-circle');
-      erro=true;
-    }
-    if(recalls[i].state==='orange'){
-      arr.push('help-circle');
-    }
-    if(recalls[i].state==='green'){
-      arr.push('checkmark-circle');
-    } 
-  }
-
+export default function Menu({erro,arr}) {
   const [correct, setCorrect] = React.useState("hide");
   const [wrong, setWrong] = React.useState("hide");
 
