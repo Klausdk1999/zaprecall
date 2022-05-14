@@ -15,7 +15,7 @@ export default function Menu({erro,arr}) {
       setWrong("show");
     }
   });
-
+  
 	return (
     <>
       <div className="footer">
@@ -26,6 +26,7 @@ export default function Menu({erro,arr}) {
               <h3 className="bold">Parabéns!</h3>
             </div>
             <h3>Você não esqueceu de nenhum flashcard!</h3>
+            <div className="red button" onClick={() => window.location.reload(false)}>Reiniciar ZapRecall</div>
           </div>
 
           <div className={wrong}>
@@ -34,10 +35,11 @@ export default function Menu({erro,arr}) {
               <h3 className="bold">Putzz...</h3>
             </div>
             <h3>Ainda faltam alguns...Mas não desanime!</h3>
+            <div className="red button" onClick={() => window.location.reload(false)}>Reiniciar ZapRecall</div>
           </div>
                     
           <div classeName="header">
-            <h3><inline className="white">--</inline>{arr.length}/8 concluidos</h3> 
+            <h3><inline className="white">-----</inline>{arr.length}/8 concluidos</h3> 
             {arr.map((name,index)=> 
             (<ion-icon key={index} name={name}></ion-icon>
             ))} 
