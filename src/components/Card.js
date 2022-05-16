@@ -46,7 +46,7 @@ export default function Card({ index, object, setState}) {
     //if(object.state==="closed"){ //pergunta n
     return(
         <>
-            <div className="card" onClick={()=>setState(index,"question")}>
+            <div className="card pointerEventsNone">
                 <h2 className={crasse} >Pergunta {index+1} </h2>
                 <ion-icon key={index} name={name}></ion-icon>
             </div>

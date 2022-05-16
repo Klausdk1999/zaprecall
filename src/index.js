@@ -10,7 +10,6 @@ function App() {
     return (
       <>
       { !init ? 
-      
           <Start setInit={setInit}/>
           :
           <Body />
