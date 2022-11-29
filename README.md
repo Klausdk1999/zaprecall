@@ -1,6 +1,6 @@
 # ZapRecall
 ## You can see it working on the link [ZapRecall](https://projeto8-zaprecall-six-ashy.vercel.app/). 
-This project is a game that works like a memory game, that helps the user remember technologies about web development. It has a responsive design and works for mobile and desktop. 
+A memory game, that helps the user remember technologies about web development. It has a responsive design and works for mobile and desktop. 
 
 ## Getting Started with Create React App
 
